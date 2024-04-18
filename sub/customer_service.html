@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/reset.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/customer.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/footer.css'>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/login.js"></script>
+    <script src='/js/customer.js'></script>
+</head>
+<body>
+    <div id="headers" style="height: 70px;"></div>
+
+    <div class="wrap">
+
+        <div id="subNav">
+            <h3>층별안내</h3>
+            <ul>
+                <li><a href="javascript:alert('준비중입니다.')">공지사항</a></li>
+                <li class="current"><a href="/sub/customer_main.html">고객 문의</a></li>
+                <li><a href="javascript:alert('준비중입니다.')">자주하는 질문</a></li>
+                <li><a href="/sub/admin_main.html">문의 내역</a></li>
+                <!-- <li><a href="javascript:alert('준비중입니다.')">1F 화장품</a></li> -->
+            </ul>
+        </div>
+
+        <!-- 고객문의 메인 -->
+        <div class="main">
+            <h2> 고객 문의 </h2>
+            <table class="customer-table">
+                <tbody>
+                    <tr>
+                        <th>이름</th>
+                        <td id="customer-name"></td>
+                        <th>아이디</th>
+                        <td id="customer-id"></td>
+                    </tr>
+                    <tr>
+                        <th>문의유형</th>
+                        <td>
+                            <select name="category">
+                                <option value="">유형 선택</option>
+                                <option value="환불">환불</option>
+                                <option value="서비스 관련">서비스 관련</option>
+                                <option value="기타">기타</option>
+                            </select>
+                        </td>
+                        <th>지점선택</th>
+                        <td>
+                            <select name="place">
+                                <option value="">지점 선택</option>
+                                <option value="안산점">안산점</option>
+                                <option value="광명점">광명점</option>
+                                <option value="시흥점">시흥점</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>제목</th>
+                        <td colspan="3"><input type="text" id="customer-title"/></td>
+                    </tr>
+                    <tr id="trContent">
+                        <th>내용</th>
+                        <td colspan="3"><textarea id="customer-content"></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="btn-box">
+                <button onclick="등록하기()">등록하기</button>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="footers"></div>
+</body>
+</html>

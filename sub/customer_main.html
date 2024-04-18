@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>고객 서비스 문의</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/reset.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/customer.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/footer.css'>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/login.js"></script>
+    <script src='/js/customer.js'></script>
+    
+</head>
+<body>
+    <div id="headers" style="height: 70px;"></div>
+
+    <div class="wrap">
+
+
+        <div id="subNav">
+            <h3>층별안내</h3>
+            <ul>
+                <li><a href="javascript:alert('준비중입니다.')">공지사항</a></li>
+                <li class="current"><a href="/sub/customer_main.html">고객 문의</a></li>
+                <li><a href="javascript:alert('준비중입니다.')">자주하는 질문</a></li>
+                <li class="adminMenu"><a href="/sub/admin_main.html">문의 내역</a></li>
+                <!-- <li><a href="javascript:alert('준비중입니다.')">1F 화장품</a></li> -->
+            </ul>
+        </div>
+
+        <!-- 고객문의 메인 -->
+        <div class="main">
+            <h2>고객 서비스 문의</h2>
+            <div class="content-box">
+                <img src="/img/customer.png"/>
+                <div class="text-box">
+                    <p>칭찬, 불만, 문의, 제안 고객님의 소중한 의견을 작성해 주세요.</p>
+                    <p>소중한 의견을 수렴하여 더욱 발전하는 이랜드리테일이 되겠습니다.
+                    <br/>로그인 후 작성해주세요.</p>
+                </div>
+            </div>
+
+            <div class="btn-box">
+                <button onclick="문의하기()">문의하기</button>
+            </div>
+
+            <div class="graybox-wrap">
+                <div class="text-box">
+                    <p>자주 찾는 질문에서 찾으시는 질문을 쉽게 확인하세요.
+                        <a href="#">자주하는 질문 ></a>
+                    </p>
+                    <p>나의 문의 내용은 마이페이지 > MY 문의 내역 메뉴에서 확인 하실 수 있습니다.
+                        <a href="#">MY 문의내역 확인 > </a>
+                    </p>
+                </div>
+                <div class="text-box">
+                    <p>문화센터 문의사항은 문화센터 메뉴에서 문의하세요.
+                        <a href="#">문화센터 고객문의 ></a>
+                    </p>
+                    <p>이랜드몰 관련 문의는 이랜드몰(온라인몰) 고객센터로 문의하세요.
+                        <a href="#">고객문의 ></a>
+                    </p>
+                    <p>윤리 경영 안내 및 부정제보(부정비리, 부당행위)신고는 윤리 경영 페이지에서 작성해주세요.
+                        <a href="#">윤리 경영 문의 ></a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="footers"></div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/reset.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/join.css'>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/join.js"></script>
+    <script src="../js/login.js"></script>
+</head>
+<body>
+    <div id="bg">
+        <div id="headers">
+
+        </div>
+        <h1>
+            회원가입
+        </h1>
+        <div id="joinWrap">
+            <form>
+                <h4>정보 입력</h4>
+                <div class="inputBox">
+                    <p>
+                        아이디
+                    </p>
+                    <div class="same">
+                        <input id="userId" type="text" placeholder="아이디"/>
+                        <input onclick="redupBtn()" type="button" value="중복확인"/>
+                    </div>
+                </div>
+                <span>
+                    영문,숫자 6~20자리를 입력해주세요.
+                </span>
+                <div class="inputBox">
+                    <p>
+                        비밀번호
+                    </p>
+                    <input id="userPw" type="password" placeholder="비밀번호"/>
+                </div>
+                <span>
+                    영문 대/소문자,숫자,특수문자 중 3가지 이상을 조합하여 8~20자리로 입력해 주세요.
+                </span>
+                <div class="inputBox">
+                    <p>
+                        비밀번호 확인
+                    </p>
+                    <input id="userVpw" type="password" placeholder="비밀번호 확인"/>
+                </div>
+                <span>
+                    입력하신 비밀번호를 다시 한번 입력해 주세요.
+                </span>
+                <p id="passwordCheck">
+                    
+                </p>
+                <div class="inputBox">
+                    <p>
+                        이메일
+                    </p>
+                    <div class="emailBox">
+                        <input id="userEmail" type="email" placeholder="이메일"/>
+                        <select>
+                            <option>직접입력</option>
+                            <option>@naver.com</option>
+                            <option>@hanmail.net</option>
+                            <option>@daum.net</option>
+                            <option>@gmail.com</option>
+                            <option>@nate.com</option>
+                        </select>
+                    </div>
+                </div>
+                <h4>본인 인증</h4>
+                <div class="inputBox">
+                    <p>
+                        이름
+                    </p>
+                    <input id="userName" type="text" placeholder="이름"/>
+                </div>
+                <div class="inputBox">
+                    <p>
+                        성별
+                    </p>
+                    <div id="sung">
+                        <div class="radioBox">
+                            <input id="radio00" checked="checked" type="radio" name="sung" value="M"/>
+                            <label for="radio00">
+                                남자
+                            </label>
+                        </div>
+                        <div class="radioBox">
+                            <input id="radio01" type="radio" name="sung" value="W"/>
+                            <label for="radio01">
+                                여자
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <p>
+                        국적
+                    </p>
+                    <div id="foreigner">
+                        <div class="radioBox">
+                            <input id="radio10" checked="checked" type="radio" name="foreigner" value="L"/>
+                            <label for="radio10">
+                                내국인
+                            </label>
+                        </div>
+                        <div class="radioBox">
+                            <input id="radio11" type="radio" name="foreigner" value="F"/>
+                            <label for="radio11">
+                                외국인
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <p>
+                        생년월일 <span>(예:19971007)</span>
+                    </p>
+                    <input id="birth" type="text" maxlength="8" placeholder="법정생년월일 8자리"/>
+                </div>
+                <div class="inputBox">
+                    <p>
+                        전화번호
+                    </p>
+                    <div id="phone">
+                        <select>
+                            <option>통신사</option>
+                            <option>LG U+</option>
+                            <option>SKT</option>
+                            <option>KT</option>
+                            <option>알뜰폰</option>
+                        </select>
+                        <input class="phoneNum" type="text" maxlength="3"/>
+                        &nbsp;-
+                        <input class="phoneNum" type="text" maxlength="4"/>
+                        &nbsp;-
+                        <input class="phoneNum" type="text" maxlength="4"/>
+                        <input onclick="cerNum()" type="button" value="인증번호 전송"/>
+                    </div>
+                </div>
+                <div id="lastBtn">
+                    <input onclick="joinBtn()" id="submit" type="button" value="가입하기"/>
+                    <input onclick="back()" id="cancel" type="button" value="취소하기"/>
+                </div>
+            </form> 
+        </div>
+        <div id="footers">
+
+        </div>
+    </div>
+</body>
+</html>

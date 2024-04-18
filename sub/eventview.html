@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/reset.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/eventview.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/header.css'>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/login.js"></script>
+    <script src='/js/eventview.js'></script>
+</head>
+<body>
+    <div id="headers" style="height: 7cap;"></div>
+
+    <div id="wrap">
+        <!-- 서브메뉴 -->
+        <div id="subNav">
+            <h3>이벤트</h3>
+            <ul>
+                <li class="current"><a href="event.html">진행이벤트</a></li>
+                <li><a href="javascript:alert('준비중입니다.')">당첨자 발표</a></li>
+                
+               
+            </ul>
+        </div>
+        <!-- 메인메뉴 -->
+        <div id="main">
+            <h3>
+                이벤트
+                <div class="btnWrap adminMenu">                    
+                    <button type="button">수정</button>
+                    <button onclick="eDelete()" type="button">삭제</button>
+                </div>
+            </h3>
+            <div class="eventView">                
+                
+            </div>
+            <div class="btnWrap2">
+                <a href="event.html"><input type="button" value="목록"></a>
+            </div>         
+        </div>
+        
+    </div>
+
+    <div id="footers"></div>
+</body>
+</html>

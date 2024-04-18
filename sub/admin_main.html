@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/reset.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/customer.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/footer.css'>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/login.js"></script>
+    <script src='/js/customer_admin.js'></script>
+</head>
+<body>
+    <div id="headers" style="height: 70px;"></div>
+
+    <div class="wrap">
+
+        <div id="subNav">
+            <h3>층별안내</h3>
+            <ul>
+                <li><a href="javascript:alert('준비중입니다.')">공지사항</a></li>
+                <li><a href="/sub/customer_main.html">고객 문의</a></li>
+                <li><a href="javascript:alert('준비중입니다.')">자주하는 질문</a></li>
+                <li class="current"><a href="/sub/admin_main.html">문의 내역</a></li>
+                <!-- <li><a href="javascript:alert('준비중입니다.')">1F 화장품</a></li> -->
+            </ul>
+        </div>
+
+        <!-- 고객문의 메인 -->
+        <div class="main">
+            <h2> 문의 내역 </h2>
+            <table class="admin-table">
+                <colgroup>
+                    <col width="10%"/>
+                    <col width="20%"/>
+                    <col width="30%"/>
+                    <col width="40%"/>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>이름</th>
+                        <th>아이디</th>
+                        <th>제목</th>
+                    </tr>
+                </thead>
+                <tbody id="table-content">
+                    <tr >
+                        <td>1</td>
+                        <td>11</td>
+                        <td>11</td>
+                        <td>111</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        
+
+        </div>
+
+    </div>
+    <div id="footers"></div>
+</body>
+</html>

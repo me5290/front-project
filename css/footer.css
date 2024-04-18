@@ -1,0 +1,112 @@
+
+/*푸터 시작*/
+#footer{
+    color: #949494;
+    width: 100%;
+    background-color: #1F1F1F;
+    color: #949494;
+}
+#footerWrap{
+    width: calc(100% - 480px);
+    min-width: 1400px;
+    margin: 0 auto;
+    height: 480px;
+}
+/*푸터 top*/
+#topFoot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    margin-bottom: 80px;
+}
+/*푸터 top 왼쪽부분*/
+#topLeftFoot{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footNav{
+    display: flex;
+    margin-left: 80px;
+}
+#footNav>li{
+    padding: 0 16px;
+}
+#footNav>li>a{
+    font-size: 20px;
+}
+#footNav>li>a:hover{
+    color: #fff;
+}
+/*푸터 top 오른쪽부분*/
+#topRightFoot>input{
+    width: 360px;
+    height: 50px;
+    padding: 10px 20px;
+    display: block;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    margin-bottom: 30px;
+    background-image: url(../img/search.png);
+    background-repeat: no-repeat;
+    background-position: 300px 4px;
+}
+#language{
+    display: flex;
+    justify-content: space-evenly;
+}
+#language>span{
+    cursor: pointer;
+}
+#language>span:hover{
+    color:#fff;
+    text-decoration: underline;
+    text-underline-offset : 4px;
+}
+#language>span::after{
+    content: '';
+    padding: 0px 1px;
+    margin-left: 28px;
+    background-color: #949494;
+}
+#language>span:last-child::after{
+    display: none;
+}
+/*푸터 bottom*/
+#bottomFoot{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#footList{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    border-right: 1px solid #fff;
+}
+#footList>li{
+    margin-right: 20px;
+}
+#footList>li>a{
+    font-size: 14px;
+}
+#footList>li>a:hover{
+    color: #fff;
+}
+#social{
+    padding: 14px;
+    border-left: 1px solid #fff;
+}
+#lastFoot{
+    margin-top: 40px;
+}
+#lastFoot>p{
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+}
